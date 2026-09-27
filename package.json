@@ -1,0 +1,30 @@
+{
+  "name": "okx-jev-desk",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "OKX + Jev (TypeSafe System One) multi-bot crypto trading desk",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "engine": "node --experimental-strip-types src/index.ts",
+    "desk": "npm --prefix web run dev",
+    "desk:build": "npm --prefix web run build",
+    "install:all": "npm install && npm --prefix web install",
+    "test": "node --experimental-strip-types --test test/*.test.ts",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "calibrate": "node --experimental-strip-types scripts/calibrate-buckets.ts",
+    "buckets": "node --experimental-strip-types scripts/bucket-occupancy.ts",
+    "measure": "node --experimental-strip-types scripts/measure.ts",
+    "proof": "node --experimental-strip-types scripts/proof.ts"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/ws": "^8.5.13",
+    "typescript": "^5.7.2"
+  }
+}

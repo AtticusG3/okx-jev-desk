@@ -1,0 +1,17 @@
+# --- public mirror (github) ---
+# Papers are third-party copyrighted work; the public mirror links to arXiv /
+# author copies in SIGNAL_CATALOGUE.md instead of redistributing them. Kept in
+# the private Gitea repo, export-ignored so `git archive` omits them.
+docs/papers/*.pdf   export-ignore
+
+# --- local only ---
+# Runtime state and scratch. Never published anywhere.
+data/
+*.log
+.env
+.env.local
+node_modules/
+web/node_modules/
+web/.next/
+# tsc incremental cache - regenerated every typecheck, not source
+web/tsconfig.tsbuildinfo

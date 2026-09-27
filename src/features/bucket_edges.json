@@ -1,0 +1,184 @@
+{
+  "provenance": {
+    "generatedAt": "2026-09-26T15:27:44.685Z",
+    "source": "OKX public REST: /market/history-candles (1m), /public/funding-rate-history",
+    "windowDays": 7,
+    "barsPerInstrument": 10100,
+    "fundingPeriods": 100,
+    "note": "Edges are quantiles of THIS venue's recorded distribution. spread is bucketed in ticks and intentionally not calibrated from candles (no book data). imbalance/flow/toxic are book-derived and keep measured ledger values."
+  },
+  "default": {
+    "spreadTicks": [
+      1.5,
+      3.5,
+      8.5
+    ],
+    "vol15m": [
+      0.000423393,
+      0.000670479,
+      0.00106761
+    ],
+    "momentumFlatAbs": {
+      "5m": 0.000570294,
+      "15m": 0.000950495
+    },
+    "rangePos": [
+      0.185,
+      0.431,
+      0.614,
+      0.842
+    ],
+    "fundingAbsBps": [
+      0.496,
+      1
+    ],
+    "imbalance": [
+      -0.4,
+      -0.12,
+      0.12,
+      0.4
+    ],
+    "flow": [
+      -0.5,
+      -0.15,
+      0.15,
+      0.5
+    ],
+    "toxic": [
+      0.35,
+      0.55,
+      0.75
+    ]
+  },
+  "byInstrument": {
+    "BTC-USDT-SWAP": {
+      "spreadTicks": [
+        1.5,
+        3.5,
+        8.5
+      ],
+      "vol15m": [
+        0.000314664,
+        0.000475941,
+        0.00074338
+      ],
+      "momentumFlatAbs": {
+        "5m": 0.00040874,
+        "15m": 0.000685442
+      },
+      "rangePos": [
+        0.183,
+        0.447,
+        0.623,
+        0.844
+      ],
+      "fundingAbsBps": [
+        0.568,
+        0.95
+      ],
+      "imbalance": [
+        -0.4,
+        -0.12,
+        0.12,
+        0.4
+      ],
+      "flow": [
+        -0.5,
+        -0.15,
+        0.15,
+        0.5
+      ],
+      "toxic": [
+        0.35,
+        0.55,
+        0.75
+      ]
+    },
+    "ETH-USDT-SWAP": {
+      "spreadTicks": [
+        1.5,
+        3.5,
+        8.5
+      ],
+      "vol15m": [
+        0.000428485,
+        0.000647663,
+        0.00100101
+      ],
+      "momentumFlatAbs": {
+        "5m": 0.000563111,
+        "15m": 0.000940019
+      },
+      "rangePos": [
+        0.193,
+        0.424,
+        0.604,
+        0.832
+      ],
+      "fundingAbsBps": [
+        0.476,
+        0.925
+      ],
+      "imbalance": [
+        -0.4,
+        -0.12,
+        0.12,
+        0.4
+      ],
+      "flow": [
+        -0.5,
+        -0.15,
+        0.15,
+        0.5
+      ],
+      "toxic": [
+        0.35,
+        0.55,
+        0.75
+      ]
+    },
+    "SOL-USDT-SWAP": {
+      "spreadTicks": [
+        1.5,
+        3.5,
+        8.5
+      ],
+      "vol15m": [
+        0.000600109,
+        0.000859761,
+        0.00130444
+      ],
+      "momentumFlatAbs": {
+        "5m": 0.000831301,
+        "15m": 0.00138448
+      },
+      "rangePos": [
+        0.189,
+        0.431,
+        0.619,
+        0.852
+      ],
+      "fundingAbsBps": [
+        0.398,
+        1
+      ],
+      "imbalance": [
+        -0.4,
+        -0.12,
+        0.12,
+        0.4
+      ],
+      "flow": [
+        -0.5,
+        -0.15,
+        0.15,
+        0.5
+      ],
+      "toxic": [
+        0.35,
+        0.55,
+        0.75
+      ]
+    }
+  }
+}
